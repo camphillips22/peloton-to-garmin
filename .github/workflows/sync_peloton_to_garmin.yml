@@ -51,6 +51,20 @@ jobs:
             "StackedWorkouts": {
               "AutomaticallyStackWorkouts": false,
               "MaxAllowedGapSeconds": 300
+            },
+            "DeviceInfoSettings": {
+              "none": {
+                "name": "vívoactive 6",
+                "unitId": 3611935598,
+                "productID": 4625,
+                "manufacturerId": 1,
+                "version": {
+                  "versionMajor": 10,
+                  "versionMinor": 14,
+                  "buildMajor": 0,
+                  "buildMinor": 0.0
+                },
+              },
             }
           },
           "Peloton": {
@@ -93,4 +107,5 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
